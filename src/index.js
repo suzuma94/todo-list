@@ -1,14 +1,6 @@
-class Task {
-    constructor(title, desc) {
-        this.title = title
-        this.desc = desc
-    }
-}
-
-function createTask(title, desc) {
-    let task = new Task(title, desc)
-    return task
-}
+import {Task} from './class_task'
+import { createTask } from './class_task'
+import './style.css'
 
 window.addEventListener('load', () => {
 	const form = document.querySelector("#new-task-form");
